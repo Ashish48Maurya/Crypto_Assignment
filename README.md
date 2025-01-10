@@ -37,7 +37,7 @@ You can use the following coin IDs as examples:
 - To see the latest data for a given `coin_id`, use:
   
   ```plaintext
-  http://localhost:8000/api/stats?coinId=coin_id
-  http://localhost:8000/api/deviation?coinId=coin_id
+  http://localhost:8000/api/stats?coin=coin_id
+  http://localhost:8000/api/deviation?coin=coin_id
 ## 2) Production
  ```plaintext
