@@ -41,3 +41,5 @@ You can use the following coin IDs as examples:
   http://localhost:8000/api/deviation?coin=coin_id
 ## 2) Production
  ```plaintext
+https://crypto-assignment-p4v9.onrender.com/api/stats?coin=coin_id
+https://crypto-assignment-p4v9.onrender.com/api/deviation?coin=coin_id
