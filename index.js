@@ -20,13 +20,17 @@ app.use((err, req, res, next) => {
     return res.status(500).json({ success: false, message: 'Internal Server Error', error: err.message });
 });
 
-const cronJob = cron.schedule('0 */2 * * *', async () => {
+// const cronJob = cron.schedule('0 */2 * * *', async () => {
+const cronJob = cron.schedule('*/1 * * * *', async () => {
     console.log("Cron job triggered:", new Date());
     try {
         await fetchCryptoData();
     } catch (err) {
         console.error("Error in cron job:", err.message);
     }
+}, {
+    scheduled: true,
+    timezone: "UTC"
 });
 
 
